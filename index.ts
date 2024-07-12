@@ -164,7 +164,7 @@ async function main() {
     if (!repositoryExists) {
       await createRepository();
     }
-    for (let page = 6; page <= totalMaxPage; page++) {
+    for (let page = 1; page <= totalMaxPage; page++) {
       console.log(`\nFetching page ${page}`);
       // fetch submissions
       const submissions = await fetchSubmissions(page);
